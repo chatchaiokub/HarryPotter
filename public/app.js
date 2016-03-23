@@ -58,7 +58,7 @@ var angular = angular.module('order', [])
           discount += 420
         }
 
-        for (var a = 0; a < delAmount.length; i++) {
+        for (var a = 0; a < delAmount.length; a++) {
           delAmount[a].amount--
         // console.log('hey')
         }
