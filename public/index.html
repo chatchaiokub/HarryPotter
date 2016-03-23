@@ -8,18 +8,19 @@
   </head>
   <body ng-controller="orderController">
 
-      <button ng-click="add({price : 100, sector : 'sec1', amount : 1})">secter1</button>
-      <button ng-click="add({price : 100, sector : 'sec2', amount : 1})">secter2</button>
-      <button ng-click="add({price : 100, sector : 'sec3', amount : 1})">secter3</button>
-      <button ng-click="add({price : 100, sector : 'sec4', amount : 1})">secter4</button>
-      <button ng-click="add({price : 100, sector : 'sec5', amount : 1})">secter5</button>
-      <button ng-click="add({price : 100, sector : 'sec6', amount : 1})">secter6</button>
-      <button ng-click="add({price : 100, sector : 'sec7', amount : 1})">secter7</button>
+      <button ng-click="addOrder({price : 100, sector : 'Philosopher’s Stone', amount : 1})">secter1</button>
+      <button ng-click="addOrder({price : 100, sector : 'Chamber of Secrets', amount : 1})">secter2</button>
+      <button ng-click="addOrder({price : 100, sector : 'Prisoner of Azkaban', amount : 1})">secter3</button>
+      <button ng-click="addOrder({price : 100, sector : 'Goblet of Fire', amount : 1})">secter4</button>
+      <button ng-click="addOrder({price : 100, sector : 'Order of the Phoenix', amount : 1})">secter5</button>
+      <button ng-click="addOrder({price : 100, sector : 'Half-Blood Prince', amount : 1})">secter6</button>
+      <button ng-click="addOrder({price : 100, sector : 'Deathly Hallows', amount : 1})">secter7</button>
 
 <div ng-repeat="val in ORDER">
   {{val}}
 </div>
-ราคารวมสุทธิ :{{sum.sum}}
-ส่วนลด : {{sum.discount}}
+<br>
+ราคารวมสุทธิ :{{Total.sumPrice}}
+ส่วนลด : {{Total.discount}}
   </body>
 </html>
