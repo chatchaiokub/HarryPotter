@@ -16,10 +16,10 @@
   <body ng-controller="orderController">
 
     <div class="container">
-      <img src="IMG/LOGO.png" style="padding-top:20px;">
+      <img class="responsive-img" src="IMG/LOGO.png" style="padding-top:20px;">
       <div class="fixed-action-btn horizontal" style="top: 25px; right: 200px;">
         <a class="btn-floating btn-large black">
-          <i class="large mdi-navigation-menu"></i>
+          <i class="new badge">{{delAmount.amount}}</i>
         </a>
       </div>
     </div>
@@ -28,58 +28,133 @@
       <div class="section">
         <div class="row">
           <div class="col s12 m3" align="center">
-            <img class="responsive-img z-depth-5" src="IMG/1.jpg">
-            <br>
-            <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'Philosopher’s Stone', amount : 1})">Buy</button>
+            <div class="card">
+              <div class="card-image">
+                <img class="responsive-img z-depth-2" src="IMG/1.jpg">
+              </div>
+              <div class="card-content teal lighten-5">
+                <h6>ราคา 100 ฿</h6>
+                <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Philosopher’s Stone', amount : 1})">Buy</button>
+              </div>
+            </div>
           </div>
           <div class="col s12 m3" align="center">
-            <img class="responsive-img z-depth-5" src="IMG/2.jpg">
-            <br>
-            <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'Chamber of Secrets', amount : 1})">Buy</button>
+            <div class="card">
+              <div class="card-image">
+                <img class="responsive-img z-depth-2" src="IMG/2.jpg">
+              </div>
+              <div class="card-content teal lighten-5">
+                <h6>ราคา 100 ฿</h6>
+                <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Chamber of Secrets', amount : 1})">Buy</button>
+              </div>
+            </div>
           </div>
           <div class="col s12 m3" align="center">
-            <img class="responsive-img z-depth-5" src="IMG/3.jpg">
-            <br>
-            <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'Prisoner of Azkaban', amount : 1})">Buy</button>
+            <div class="card">
+              <div class="card-image">
+                <img class="responsive-img z-depth-2" src="IMG/3.jpg">
+              </div>
+              <div class="card-content teal lighten-5">
+                <h6>ราคา 100 ฿</h6>
+                <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Prisoner of Azkaban', amount : 1})">Buy</button>
+              </div>
+            </div>
           </div>
           <div class="col s12 m3" align="center">
-            <img class="responsive-img z-depth-5" src="IMG/4.jpg">
-            <br>
-            <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'Goblet of Fire', amount : 1})">Buy</button>
+            <div class="card">
+              <div class="card-image">
+                <img class="responsive-img z-depth-2" src="IMG/4.jpg">
+              </div>
+              <div class="card-content teal lighten-5">
+                <h6>ราคา 100 ฿</h6>
+                <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Goblet of Fire', amount : 1})">Buy</button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="col s12 m3" align="center">
-            <img class="responsive-img z-depth-5" src="IMG/5.jpg">
-            <br>
-            <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'Order of the Phoenix', amount : 1})">Buy</button>
+            <div class="card">
+              <div class="card-image">
+                <img class="responsive-img z-depth-2" src="IMG/5.jpg">
+              </div>
+              <div class="card-content teal lighten-5">
+                <h6>ราคา 100 ฿</h6>
+                <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Order of the Phoenix', amount : 1})">Buy</button>
+              </div>
+            </div>
           </div>
           <div class="col s12 m3" align="center">
-            <img class="responsive-img z-depth-5" src="IMG/6.jpg">
-            <br>
-            <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'Half-Blood Prince', amount : 1})">Buy</button>
+            <div class="card">
+              <div class="card-image">
+                <img class="responsive-img z-depth-2" src="IMG/6.jpg">
+              </div>
+              <div class="card-content teal lighten-5">
+                <h6>ราคา 100 ฿</h6>
+                <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Half-Blood Prince', amount : 1})">Buy</button>
+              </div>
+            </div>
           </div>
           <div class="col s12 m3" align="center">
-            <img class="responsive-img z-depth-5" src="IMG/7.jpg">
-            <br>
-            <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'Deathly Hallows', amount : 1})">Buy</button>
+            <div class="card">
+              <div class="card-image">
+                <img class="responsive-img z-depth-2" src="IMG/7.jpg">
+              </div>
+              <div class="card-content teal lighten-5">
+                <h6>ราคา 100 ฿</h6>
+                <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Deathly Hallows', amount : 1})">Buy</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-<br><br>
-
-
-
-
-
-
-<div ng-repeat="val in ORDER">
-  {{val}}
-</div>
-<br>
-ราคารวมสุทธิ :{{Total.sumPrice}}
-ส่วนลด : {{Total.discount}}
-  </body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title"><center>Shopping Cart</center></span>
+                <p class="row">
+                  <div class="col s9 m10">
+                    <b>ชื่อหนังสือ</b>
+                  </div>
+                  <div class="col m2 s3">
+                    <b>จำนวน</b>
+                  </div>
+                  <div class="row" ng-repeat="val in ORDER">
+                    <div class="col s9 m10">
+                      <h6>{{val.sector}}</h6>
+                    </div>
+                    <div class="col m2 s3">
+                      <h6>{{val.amount}}</h6>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col s7 m10">
+                      ส่วนลด
+                    </div>
+                    <div class="col m2 s5">
+                      {{Total.discount}} ฿
+                    </div>
+                    <br>
+                    <div class="col s7 m10">
+                      ราคารวมสุทธิ
+                    </div>
+                    <div class="col m2 s5">
+                      {{Total.sumPrice}} ฿
+                    </div>
+                  </div>
+                </p>
+            </div>
+            <div class="card-action">
+                  <a href="#">Pay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
