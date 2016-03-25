@@ -11,6 +11,29 @@ var angular = angular.module('order', [])
       $scope.Total = promotion($scope.ORDER)
       $scope.TAM = Totalamount($scope.ORDER)
     }
+
+    $scope.addAmount = function (index) {
+      $scope.ORDER[index].amount++
+      $scope.Total = promotion($scope.ORDER)
+    }
+    $scope.delAmount = function (index) {
+      if ($scope.ORDER[index].amount === 1) {
+        $scope.ORDER.splice(index, 1)
+        $scope.Total = promotion($scope.ORDER)
+        $scope.TAM = Totalamount($scope.ORDER)
+      } else {
+        $scope.ORDER[index].amount--
+        $scope.Total = promotion($scope.ORDER)
+        $scope.TAM = Totalamount($scope.ORDER)
+      }
+    }
+    $scope.deleteOrder = function (index) {
+      $scope.ORDER.splice(index, 1)
+
+      $scope.Total = promotion($scope.ORDER)
+      $scope.TAM = Totalamount($scope.ORDER)
+    }
+
     var checkRepeat = function (data) {
       for (var i = 0; i < $scope.ORDER.length; i++) {
         if ($scope.ORDER[i].sector === data.sector) {
