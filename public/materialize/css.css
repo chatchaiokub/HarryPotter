@@ -1,3 +1,8 @@
 body {
   background-image: url('../IMG/cigar-texture.jpg');
 }
+.badge{
+  position: fixed;
+  top: -15px;
+
+}
