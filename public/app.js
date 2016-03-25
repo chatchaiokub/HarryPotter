@@ -9,6 +9,7 @@ var angular = angular.module('order', [])
         $scope.ORDER.push(data)
       }
       $scope.Total = promotion($scope.ORDER)
+      $scope.TAM = Totalamount($scope.ORDER)
     }
     var checkRepeat = function (data) {
       for (var i = 0; i < $scope.ORDER.length; i++) {
@@ -64,5 +65,12 @@ var angular = angular.module('order', [])
         length = delAmount.length
       }
       return ({discount: discount, sumPrice: price - discount})
+    }
+    var Totalamount = function (amount) {
+      var TA = 0
+      for (var A = 0; A < $scope.ORDER.length; A++) {
+        TA += $scope.ORDER[A].amount
+      }
+      return (TA)
     }
   })
