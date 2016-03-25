@@ -29,7 +29,6 @@ var angular = angular.module('order', [])
     }
     $scope.deleteOrder = function (index) {
       $scope.ORDER.splice(index, 1)
-
       $scope.Total = promotion($scope.ORDER)
       $scope.TAM = Totalamount($scope.ORDER)
     }
@@ -84,7 +83,6 @@ var angular = angular.module('order', [])
             delAmount.splice(s, 1)
           }
         }
-
         length = delAmount.length
       }
       return ({discount: discount, sumPrice: price - discount})
