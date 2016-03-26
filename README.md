@@ -6,13 +6,13 @@
 
 ### how to install
 ```
-$ sudo npm install
+$ npm install
 ```
 ### how to start server
 ```
-$ sudo npm start
+$ npm start
 ```
 ### how to test
 ```
-$ sudo npm test
+$ npm test
 ```
