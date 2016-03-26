@@ -21,7 +21,7 @@
     <nav class="orange darken-4" style="opacity:0.85;">
       <div class="nav-wrapper container">
         <a href="#!" class="brand-logo"><img class="responsive-img" src="IMG/logo3.png"></a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons modal-trigger" data-target="modal1">shopping_basket</i><div ng-show = "TAM > 0" class="badge">{{TAM}}</div></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons modal-trigger" data-target="modal1">shopping_basket</i><div id="TAM" ng-show = "TAM > 0" class="badge">{{TAM}}</div></a>
 
         <ul class="right hide-on-med-and-down">
           <li>
@@ -56,7 +56,7 @@
               </div>
               <div class="card-content teal lighten-5">
                 <h6>ราคา 100 ฿</h6>
-                <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Philosopher’s Stone', amount : 1})">Buy</button>
+                <button id="sec1" class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Philosopher’s Stone', amount : 1})">Buy</button>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@
               </div>
               <div class="card-content teal lighten-5">
                 <h6>ราคา 100 ฿</h6>
-                <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Chamber of Secrets', amount : 1})">Buy</button>
+                <button id="sec2" class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Chamber of Secrets', amount : 1})">Buy</button>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@
               </div>
               <div class="card-content teal lighten-5">
                 <h6>ราคา 100 ฿</h6>
-                <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Prisoner of Azkaban', amount : 1})">Buy</button>
+                <button id="sec3" class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Prisoner of Azkaban', amount : 1})">Buy</button>
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@
               </div>
               <div class="card-content teal lighten-5">
                 <h6>ราคา 100 ฿</h6>
-                <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Goblet of Fire', amount : 1})">Buy</button>
+                <button id="sec4" class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Goblet of Fire', amount : 1})">Buy</button>
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@
               </div>
               <div class="card-content teal lighten-5">
                 <h6>ราคา 100 ฿</h6>
-                <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Order of the Phoenix', amount : 1})">Buy</button>
+                <button id="sec5" class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Order of the Phoenix', amount : 1})">Buy</button>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@
               </div>
               <div class="card-content teal lighten-5">
                 <h6>ราคา 100 ฿</h6>
-                <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Half-Blood Prince', amount : 1})">Buy</button>
+                <button id="sec6" class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Half-Blood Prince', amount : 1})">Buy</button>
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@
               </div>
               <div class="card-content teal lighten-5">
                 <h6>ราคา 100 ฿</h6>
-                <button class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Deathly Hallows', amount : 1})">Buy</button>
+                <button id="sec7" class="btn waves-effect waves-light black" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Deathly Hallows', amount : 1})">Buy</button>
               </div>
             </div>
           </div>
@@ -168,14 +168,14 @@
           ส่วนลด
         </div>
         <div class="col s5 m2">
-          {{Total.discount}} ฿
+          <a id="discount">{{Total.discount}}</a> ฿
         </div>
         <br>
         <div class="col s7 m10">
           ราคารวมสุทธิ
         </div>
         <div class="col m2 s5">
-          {{Total.sumPrice}} ฿
+          <a id="sumPrice">{{Total.sumPrice}}</a> ฿
         </div>
       </div>
     </div>
