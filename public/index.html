@@ -4,15 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
     <title>Harry Book Store</title>
+    <!-- CSS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="materialize/css.css">
-
+    <!-- script -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 	  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
 	  <script src="app.js"></script>
-
   </head>
   <body ng-controller="orderController">
 
@@ -22,7 +22,6 @@
       <div class="nav-wrapper container">
         <a href="index.html" class="brand-logo"><img class="responsive-img" src="IMG/logo3.png"></a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons modal-trigger" data-target="modal1">shopping_basket</i><div id="TAM" ng-show = "TAM > 0" class="badge">{{TAM}}</div></a>
-
         <ul class="right hide-on-med-and-down">
           <li>
             <button class="btn-large waves-effect waves-light black modal-trigger" data-target="modal1">
@@ -31,7 +30,6 @@
                 <a><span class="new badge">{{TAM}}</span></a>
               </li>
             </button>
-
           </li>
         </ul>
       </div>
@@ -56,7 +54,7 @@
               </div>
               <div class="card-content teal lighten-5">
                 <h6>ราคา 100 ฿</h6>
-                <button id="sec1" class="btn waves-effect waves-light black" onclick="Materialize.toast('เพิ่มสินค้าเรียบร้อย',4000,'rounded')" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Philosopher’s Stone', amount : 1})">Buy</button>
+                <button id="sec1" class="btn waves-effect waves-light black" onclick="Materialize.toast('เพิ่มสินค้าลงตระกร้าเรียบร้อย',4000,'rounded')" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Philosopher’s Stone', amount : 1})">Buy</button>
               </div>
             </div>
           </div>
@@ -67,7 +65,7 @@
               </div>
               <div class="card-content teal lighten-5">
                 <h6>ราคา 100 ฿</h6>
-                <button id="sec2" class="btn waves-effect waves-light black" onclick="Materialize.toast('เพิ่มสินค้าเรียบร้อย',4000,'rounded')" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Chamber of Secrets', amount : 1})">Buy</button>
+                <button id="sec2" class="btn waves-effect waves-light black" onclick="Materialize.toast('เพิ่มสินค้าลงตระกร้าเรียบร้อย',4000,'rounded')" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Chamber of Secrets', amount : 1})">Buy</button>
               </div>
             </div>
           </div>
@@ -78,7 +76,7 @@
               </div>
               <div class="card-content teal lighten-5">
                 <h6>ราคา 100 ฿</h6>
-                <button id="sec3" class="btn waves-effect waves-light black" onclick="Materialize.toast('เพิ่มสินค้าเรียบร้อย',4000,'rounded')" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Prisoner of Azkaban', amount : 1})">Buy</button>
+                <button id="sec3" class="btn waves-effect waves-light black" onclick="Materialize.toast('เพิ่มสินค้าลงตระกร้าเรียบร้อย',4000,'rounded')" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Prisoner of Azkaban', amount : 1})">Buy</button>
               </div>
             </div>
           </div>
@@ -89,7 +87,7 @@
               </div>
               <div class="card-content teal lighten-5">
                 <h6>ราคา 100 ฿</h6>
-                <button id="sec4" class="btn waves-effect waves-light black" onclick="Materialize.toast('เพิ่มสินค้าเรียบร้อย',4000,'rounded')" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Goblet of Fire', amount : 1})">Buy</button>
+                <button id="sec4" class="btn waves-effect waves-light black" onclick="Materialize.toast('เพิ่มสินค้าลงตระกร้าเรียบร้อย',4000,'rounded')" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Goblet of Fire', amount : 1})">Buy</button>
               </div>
             </div>
           </div>
@@ -102,7 +100,7 @@
               </div>
               <div class="card-content teal lighten-5">
                 <h6>ราคา 100 ฿</h6>
-                <button id="sec5" class="btn waves-effect waves-light black" onclick="Materialize.toast('เพิ่มสินค้าเรียบร้อย',4000,'rounded')" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Order of the Phoenix', amount : 1})">Buy</button>
+                <button id="sec5" class="btn waves-effect waves-light black" onclick="Materialize.toast('เพิ่มสินค้าลงตระกร้าเรียบร้อย',4000,'rounded')" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Order of the Phoenix', amount : 1})">Buy</button>
               </div>
             </div>
           </div>
@@ -113,7 +111,7 @@
               </div>
               <div class="card-content teal lighten-5">
                 <h6>ราคา 100 ฿</h6>
-                <button id="sec6" class="btn waves-effect waves-light black" onclick="Materialize.toast('เพิ่มสินค้าเรียบร้อย',4000,'rounded')" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Half-Blood Prince', amount : 1})">Buy</button>
+                <button id="sec6" class="btn waves-effect waves-light black" onclick="Materialize.toast('เพิ่มสินค้าลงตระกร้าเรียบร้อย',4000,'rounded')" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Half-Blood Prince', amount : 1})">Buy</button>
               </div>
             </div>
           </div>
@@ -124,7 +122,7 @@
               </div>
               <div class="card-content teal lighten-5">
                 <h6>ราคา 100 ฿</h6>
-                <button id="sec7" class="btn waves-effect waves-light black" onclick="Materialize.toast('เพิ่มสินค้าเรียบร้อย',4000,'rounded')" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Deathly Hallows', amount : 1})">Buy</button>
+                <button id="sec7" class="btn waves-effect waves-light black" onclick="Materialize.toast('เพิ่มสินค้าลงตระกร้าเรียบร้อย',4000,'rounded')" ng-click="addOrder({price : 100, sector : 'HarryPotter and the Deathly Hallows', amount : 1})">Buy</button>
               </div>
             </div>
           </div>
@@ -139,13 +137,13 @@
       <div class="row">
         <h5 class="center-align"><b>Shopping Cart</b></h5>
         <br>
-        <div class="col s8 m7">
+        <div class="col s5 m7">
           <b>ชื่อหนังสือ</b>
         </div>
-        <div class="col s3 m3">
+        <div class="col s2 m3">
           <b>จำนวนสินค้า</b>
         </div>
-        <div class="col s1 m2">
+        <div class="col s5 m2">
 
         </div>
       </div>
@@ -153,10 +151,10 @@
         <div class="col s5 m7 l8">
           <h6>{{val.sector}}</h6>
         </div>
-        <div class="col s1 m1 l1">
+        <div class="col s2 m1 l1">
           <h6>{{val.amount}}</h6>
         </div>
-        <div class="col s6 m4 l3">
+        <div class="col s5 m4 l3">
           <a href="" ng-click="delAmount($index)"><i class="material-icons left">fast_rewind</i></a>
           <a href="" ng-click="addAmount($index)"><i class="material-icons left">fast_forward</i></a>
           <a href="" ng-click="deleteOrder($index)"><i class="material-icons left">delete</i></a>

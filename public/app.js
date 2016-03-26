@@ -51,11 +51,11 @@ var angular = angular.module('order', [])
     var promotion = function (order) {
       var length = order.length
       var price = 0
+      var discount = 0
       for (var i = 0; i < order.length; i++) {
         price += order[i].amount * 100
       }
       var delAmount = []
-      var discount = 0
       for (var x = 0; x < order.length; x++) {
         delAmount.push({price: order[x].price, sector: order[x].sector, amount: order[x].amount})
       }
