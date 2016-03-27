@@ -161,7 +161,7 @@
         </div>
       </div>
       <hr>
-      <div class="row" ng-show="TAM > 0">
+      <div class="row" ng-show="!empty">
         <div class="col s7 m10">
           ส่วนลด
         </div>
@@ -177,6 +177,9 @@
         </div>
       </div>
     </div>
+    <div class="row" ng-show="empty">
+      <div align="center" class="col s12 m12"><b>ยังไม่มีสินค้าในตระกร้าของคุณ.</b></div>
+  </div>
     <div class="modal-footer">
       <a href="#!" class="btn-flat modal-action modal-close waves-effect waves-default">Close</a>
     </div>

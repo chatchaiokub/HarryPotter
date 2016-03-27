@@ -1,6 +1,7 @@
 var angular = angular.module('order', [])
   .controller('orderController', function ($scope) {
     $scope.ORDER = []
+    $scope.empty = true
     $scope.addOrder = function (data) {
       if (checkRepeat(data)) {
         var find = findRepeat(data)
@@ -10,6 +11,7 @@ var angular = angular.module('order', [])
       }
       $scope.Total = promotion($scope.ORDER)
       $scope.TAM = Totalamount($scope.ORDER)
+      $scope.empty = false
     }
 
     $scope.addAmount = function (index) {
