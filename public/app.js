@@ -23,16 +23,19 @@ var angular = angular.module('order', [])
         $scope.ORDER.splice(index, 1)
         $scope.Total = promotion($scope.ORDER)
         $scope.TAM = Totalamount($scope.ORDER)
+        $scope.empty = true
       } else {
         $scope.ORDER[index].amount--
         $scope.Total = promotion($scope.ORDER)
         $scope.TAM = Totalamount($scope.ORDER)
+        $scope.empty = true
       }
     }
     $scope.deleteOrder = function (index) {
       $scope.ORDER.splice(index, 1)
       $scope.Total = promotion($scope.ORDER)
       $scope.TAM = Totalamount($scope.ORDER)
+      $scope.empty = true
     }
 
     var checkRepeat = function (data) {
